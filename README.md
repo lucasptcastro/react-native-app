@@ -1,15 +1,13 @@
-## 🧩 FRAMEWORKS:
+## 🧩 Frameworks:
 
     - Expo
     - Nativewind
-    -
 
-## Plugins:
+## 🎨 Plugins:
 
-    - [Prettier tailwindcss](https://github.com/tailwindlabs/prettier-plugin-tailwindcss)
-    -
+    - Prettier tailwindcss: <https://github.com/tailwindlabs/prettier-plugin-tailwindcss/>
 
 ## 📌 Como usar:
 
-    - Para inicializar o projeto:
+    - Inicializar o projeto:
         $ npm run start
