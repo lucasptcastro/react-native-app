@@ -1,11 +1,33 @@
-import { StatusBar } from "expo-status-bar";
-import { Text, View } from "react-native";
+import Main from "./src/views/index";
 
-export default function App() {
-  return (
-    <View className="flex-1 items-center justify-center bg-gray-950">
-      <Text className="text-5xl font-bold text-gray-50">App Teste</Text>
-      <StatusBar style="light" translucent />
-    </View>
-  );
+// fonts
+import { Roboto_400Regular, Roboto_700Bold } from "@expo-google-fonts/roboto";
+import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import {
+  useFonts,
+  Comfortaa_400Regular,
+  Comfortaa_700Bold,
+} from "@expo-google-fonts/comfortaa";
+import {
+  Poppins_400Regular,
+  Poppins_700Bold,
+} from "@expo-google-fonts/poppins";
+
+export default function Index() {
+  const [hasLoadedFonts] = useFonts({
+    Roboto_400Regular,
+    Roboto_700Bold,
+    Nunito_400Regular,
+    Nunito_700Bold,
+    Comfortaa_400Regular,
+    Comfortaa_700Bold,
+    Poppins_400Regular,
+    Poppins_700Bold,
+  });
+
+  if (!hasLoadedFonts) {
+    return null;
+  }
+
+  return <Main />;
 }
